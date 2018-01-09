@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "shy_gem/version"
+require "version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "shy_gem"
-  spec.version       = ShyGem::VERSION
+  spec.name          = "shyflag"
+  spec.version       = ShyFlag::VERSION
   spec.authors       = ["shyshenhaoyu"]
   spec.email         = ["haoyu.shen@careerbuilder.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "s3 flag"
+  spec.description   = "a temp solution for setting control flag"
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "shy_gem"
+require "shy_flag"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

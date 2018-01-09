@@ -1,0 +1,15 @@
+require "version"
+require "s3/s3_loader"
+
+module ShyFlag
+  attr_reader :expire, :expiration, :results, :region
+  def self.get(region, bucket, key, expire: 600)
+    @expire = expire
+    puts Time.now()
+    if(@expiration.nil? || @expiration < Time.now())
+      @results = S3Loader::GetFlag.new(region, bucket, key).get_image_from_s3()
+      @expiration = Time.now()+ @expire
+    end
+    @results
+  end
+end
