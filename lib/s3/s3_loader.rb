@@ -11,7 +11,6 @@ class S3Loader
   end
 
   def s3_client
-    puts @region
     Aws::S3::Client.new(region: @region)
   end
 

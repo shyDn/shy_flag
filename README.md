@@ -19,3 +19,8 @@ And then execute:
   aws_region, bucket_name, object_key are required
 
   expir_time is optional, default value is 3600(1h)
+
+
+#Recommendation
+
+  flag storage as json in s3
