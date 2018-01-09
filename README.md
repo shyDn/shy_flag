@@ -15,6 +15,7 @@ And then execute:
 ## Usage
 
   ShyFlag.get(aws_region,bucket_name,object_key,expir_time)
-  aws_region, bucket_name, object_key are required
-  expir_time default value is 3600(1h)
 
+  aws_region, bucket_name, object_key are required
+
+  expir_time is optional, default value is 3600(1h)
