@@ -5,16 +5,16 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'shyflag'
+gem 'shy_flag', '~> 0.1.4'
 ```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install shyflag
+    $ bundle install
 
 ## Usage
+
+  ShyFlag.get(aws_region,bucket_name,object_key,expir_time)
+  aws_region, bucket_name, object_key are required
+  expir_time default value is 3600(1h)
 

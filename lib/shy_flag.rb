@@ -7,7 +7,8 @@ module ShyFlag
     @expire = expire
     puts Time.now()
     if(@expiration.nil? || @expiration < Time.now())
-      @results = S3Loader::GetFlag.new(region, bucket, key).get_image_from_s3()
+      s3_loader= S3Loader.new(region, bucket, key)
+      @results = s3_loader.get_image_from_s3()
       @expiration = Time.now()+ @expire
     end
     @results
