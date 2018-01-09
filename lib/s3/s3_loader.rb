@@ -1,8 +1,6 @@
 require 'aws-sdk-s3'
 
 class S3Loader
-  attr_reader :s3, :region, :bucket, :key
-  
   def initialize(region, bucket, key)
     @region=region
     @s3=s3_client
