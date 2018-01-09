@@ -3,7 +3,7 @@ require "s3/s3_loader"
 
 module ShyFlag
   attr_reader :expire, :expiration, :results, :region
-  def self.get(region, bucket, key, expire: 3600)
+  def self.get(region, bucket, key, expire = 3600)
     @expire = expire
     puts Time.now()
     if(@expiration.nil? || @expiration < Time.now())
