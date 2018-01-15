@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'shy_flag', '~> 0.1.4'
+gem 'shy_flag', '~> 0.1.7'
 ```
 
 And then execute:
@@ -14,11 +14,11 @@ And then execute:
 
 ## Usage
 
-  ShyFlag.get(aws_region,bucket_name,object_key,expir_time)
+  ShyFlag.get(aws_region,bucket_name,object_key,expir_time,credential)
 
-  aws_region, bucket_name, object_key are required
+  aws_region, bucket_name, object_key, expir_time(eg: 3600 means 1 hour) are required
 
-  expir_time is optional, default value is 3600(1h)
+  credential is optional (eg: {"access_key_id"=>"xxxxxxxxxxxxx","secret_access_key"=>"xxxxxxxxxxxxxxxxxxxxx"})
 
 
 #Recommendation
